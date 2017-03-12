@@ -1,0 +1,181 @@
+#let-us-know {
+
+  h2 {
+    color:        #939D43;
+    padding-bottom: 20px;
+  }
+
+  .panel-body {
+    height: 160px;
+  }
+
+  .panel-footer {
+    p {
+    color: @link-color;
+    }
+  }
+
+  .height-override {
+    height: 127px;
+  }
+
+  #comment-and-carousel-container {
+    @media (max-width: @screen-lg-min) {
+      padding-top: 75px;
+    }
+
+  }
+
+  .col-md-3 {
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+
+    ul > li {
+      display: flex;
+      justify-content: center;
+    }
+
+
+  }
+
+  .count-and-type {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #5F665C;
+  }
+
+
+
+  .circle {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 1em;
+    background: #ffffff;
+    margin: 0.2em;
+    display: inline-block;
+    color: #ffffff;
+  }
+
+  .circle-empty {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 1em;
+    margin: 0.2em;
+    display: inline-block;
+    color: #eeeeee;
+    border-color: #B9AE98;
+
+    border: 1px solid #B9AE98;
+    background-color: transparent;
+
+  }
+
+  .circle-empty:hover {
+      color: #DA5927;
+      background-color: #DA5927;
+      cursor: pointer;
+  }
+
+  .circle-empty:active {
+    color: #DA5927;
+    background-color: #DA5927;
+  }
+
+  .fa-thumbs-o-up:hover:before {
+    content: "\f164";
+    color: #DA5927;
+
+  }
+
+  .fa-thumbs-o-up:active:before {
+    content: "\f164";
+    color: #DA5927;
+  }
+
+  .fa-thumbs-o-up:hover {
+    cursor: pointer;
+    color: #DA5927;
+
+  }
+
+  .fa-star-o:hover {
+    cursor: pointer;
+    color: #DA5927;
+
+  }
+
+  .fa-chevron-circle-left:hover {
+    cursor: pointer;
+    color: #DA5927;
+
+  }
+
+  .fa-chevron-circle-right:hover {
+    cursor: pointer;
+    color: #DA5927;
+
+  }
+
+  .fa-star-o:hover:before {
+    content: "\f005";
+    color: #DA5927;
+
+  }
+
+  .fa-star-o:active:before {
+    content: "\f005";
+    color: #DA5927;
+  }
+
+  .fa {
+    color: #B9AE98;
+  }
+
+  .carousel-spin {
+    background: #B9AE98;
+    border: 1px solid #eeeeee;
+  }
+
+  @media (max-width: @screen-sm-min) {
+  }
+
+
+  #carousel-container {
+    @media (max-width: 725px) {
+        display: none;
+    }
+
+    display: flex;
+    justify-content: center;
+
+    .fa-chevron-circle-left {
+      line-height: 100px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      padding-right: 5px;
+
+      color: #5F665C;
+    }
+
+    .fa-chevron-circle-right {
+      line-height: 100px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      padding-left: 5px;
+      color: #5F665C;
+    }
+
+
+  }
+
+  #comment-section {
+    padding: 20px 30px;
+
+  }
+}

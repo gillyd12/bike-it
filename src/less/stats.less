@@ -1,0 +1,102 @@
+#statistics {
+  background-color:         #DA5927;
+
+  .col-md-3 {
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+
+    ul > li {
+      color:                #eeeeee;
+      display: flex;
+      justify-content: center;
+    }
+
+
+  }
+
+}
+
+.count {
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.count-type {
+  font-size: 20px;
+}
+
+#statistics-2 {
+  background-color:         #DA5927;
+
+  .col-md-2 {
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+
+    .difficulty {
+      padding-top: 80px;
+    }
+
+    ul > li {
+      color:                #eeeeee;
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+
+}
+
+#circles {
+  .circle {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 1em;
+    background: #eeeeee;
+    margin: 0.2em;
+    display: inline-block;
+    color: #eeeeee;
+  }
+
+  .circle-empty {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 1em;
+    margin: 0.2em;
+    display: inline-block;
+    color: #eeeeee;
+    border-color: #eeeeee;
+
+    border: 1px solid #eeeeee;
+    background-color: #DA5927;
+
+  }
+
+  .circle::before{
+    content: '';
+    position: absolute;
+    top: .9em;
+    left: -4em;
+    width: 4em;
+    height: .2em;
+    z-index: -1;
+  }
+
+
+  .circle:first-child::before {
+    display: none;
+  }
+}
+
+.count-and-type {
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 25px;
+}
+

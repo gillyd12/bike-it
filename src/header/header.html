@@ -1,0 +1,57 @@
+<template>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav nav-justified">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">ROAD BIKE ROUTES</a></li>
+                    <li><a href="#">PAVED TRAILS</a></li>
+                    <li><a href="#">SINGLETRACK</a></li>
+                    <li><a href="#">GRAVEL ROUTES</a></li>
+                    <li><a href="#">CRAFT BREW ROUTES</a></li>
+                    <li><a href="#">SEARCH</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</template>
+
+
+
+<script>
+    (function() {
+
+        var Prototype = Object.create(HTMLElement.prototype);
+        var importedDoc = document.currentScript.ownerDocument;
+
+        Prototype.createdCallback = function () {
+            var template = importedDoc.querySelector('template'); // get reference to the template;
+            var template_clone = document.importNode(template.content, true); // import the template into the doc to clone;
+
+//            var clickable = template_clone.querySelector('#clickable'); // eample if we had a clickable item
+//
+//            clickable.addEventListener('click', function () {
+//                alert('some clickable thing');
+//            })
+
+            var root = this.createShadowRoot();
+            root.appendChild(template_clone); // create the shadow root and append the cloned template.
+
+        };
+
+        document.registerElement('bike-header', {
+            prototype: Prototype
+        });
+
+    })();
+</script>
+
+<!--<link rel="stylesheet" href="../css/main.css"/>-->

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Example Site</title>
+    <base href="/"/>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="src/css/main.css"/>
+    <link rel="import" href="src/header/header.html" id="header">
+    <link rel="import" href="src/let-us-know/let-us-know.html" id="let-us-know">
+</head>
+
+<body>
+
+
+<div id="container">
+    <bike-header></bike-header>
+
+
+</div>
+
+<script>
+
+    // loading html directly
+    // var content = document.querySelector('#header').import;
+    // var x = content.querySelector('#header-content');
+    // document.body.appendChild(x);
+
+    // loading html from template
+//     var header = document.querySelector('#header').import;
+//     var header_template = header.querySelector('template');
+//     var clone = document.importNode(header_template.content, true);
+//     document.querySelector('#container').appendChild(clone);
+
+
+    var let_us_know = document.querySelector('#let-us-know').import;
+    var let_us_know_template = let_us_know.querySelector('template');
+    var clone = document.importNode(let_us_know_template.content, true);
+    document.querySelector('#container').appendChild(clone);
+
+
+</script>
+
+<div>
+    <hr>
+</div>
+
+<div id="route-area" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>OLD CAPITAL BIKE ROUTES</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Bacon ipsum dolor amet fatback pork loin beef ribs kevin, salami
+                tenderloin bacon swine filet mignon short loin picanha corned beef
+                ground round frankfurter bresaola. Burgdoggen prosciutto short loin
+                filet mignon, capicola tongue doner swine tenderloin rump ball tip
+                shankle andouille kielbasa ribeye. Chicken ham swine tri-tip, pig
+                fatback tenderloin drumstick corned beef rump. Leber- kas pig salami,
+                beef corned beef tri-tip biltong sausage prosciutto shank.
+            </p>
+        </div>
+    </div>
+    <div class="map row">
+        <div class="col-md-6">
+            <ul class="list-unstyled">
+                <li class="count">
+                    <h5><a href="">Coralville Dam</a> &nbsp; <span class="label label-default easy">Easy</span></h5>
+                    <h5><a href="">Frytown Loop</a> &nbsp; <span class="label label-default moderate">Moderate</span></h5>
+                    <h5><a href="">Hills Loop</a> &nbsp; <span class="label label-default difficult">Difficult</span></h5>
+                    <h5><a href="">Iowa City to Big Grove Loop</a> &nbsp; <span class="label label-default extreme">Extreme</span></h5>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <p>
+                MAP GOES HERE
+            </p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <hr>
+</div>
+
+<div id="trailhead" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h5>TRAILHEAD INFORMATION</h5>
+            <h6><strong>Location:</strong> &nbsp; <a href="">Firetrucker in Ankeny, 716 SW 3rd St, Ankeny, IA 50023</a> <span class="pipe">|</span> <strong>Type: </strong> &nbsp; Bar  </h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h6 class="feature-override"><strong> Features: </strong> </h6>
+            <div class="row">
+                <div class="col-md-2">
+                    <ul class="list-unstyled">
+                        <li>Parking</li>
+                        <li>Overnight Parking</li>
+                        <li>Water</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-unstyled">
+                        <li class="strike">Vending Machine</li>
+                        <li>Bike Repair Tools</li>
+                        <li class="strike">Bike Rental</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-unstyled">
+                        <li>Phone Charging</li>
+                        <li>Wifi</li>
+                        <li>Restrooms</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-unstyled">
+                        <li class="strike">Showers</li>
+                        <li class="strike">Camping</li>
+                        <li>Lodging</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-unstyled">
+                        <li>Dining</li>
+                        <li class="strike">Bike Shipping</li>
+                        <li>Tire Pump</li>
+                    </ul>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <hr>
+</div>
+
+<div id="statistics" class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <ul class="list-unstyled">
+                <img class="img-responsive" src="src/assets/images/icons_gear.png" alt>
+                <li class="count">5</li>
+                <li class="count-type">Route Types</li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <ul class="list-unstyled">
+                <img class="img-responsive" src="src/assets/images/icons_chain.png" alt>
+                <li class="count">2,000</li>
+                <li class="count-type">Miles</li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <ul class="list-unstyled">
+                <img class="img-responsive" src="src/assets/images/icons_mountain.png" alt>
+                <li class="count">41 FT</li>
+                <li class="count-type">Elevation</li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <ul class="list-unstyled">
+                <img class="img-responsive" src="src/assets/images/icons_wheel.png" alt>
+                <li class="count">128</li>
+                <li class="count-type">Routes</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div>
+    <hr>
+</div>
+
+<div id="statistics-2" class="container-fluid">
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6">
+            <ul class="list-unstyled">
+                <li>
+                    <img class="img-responsive" src="src/assets/images/icons_gear.png" alt>
+                </li>
+                <li>
+                    <div class="count-and-type">ROAD</div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6">
+            <ul class="list-unstyled">
+                <li>
+                    <img class="img-responsive" src="src/assets/images/icons_chain.png" alt>
+                </li>
+                <li>
+                    <div class="count-and-type">41</div>
+                    &nbsp;
+                    <div class="count-and-type">MILES</div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6">
+            <ul class="list-unstyled">
+                <li>
+                    <img class="img-responsive" src="src/assets/images/icons_mountain.png" alt>
+                </li>
+                <li>
+                    <div class="count-and-type">41</div>
+                    &nbsp;
+                    <div class="count-and-type">FT</div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6">
+            <ul class="list-unstyled">
+                <li>
+                    <img class="img-responsive" src="src/assets/images/icons_wheel.png" alt>
+                </li>
+                <li>
+                    <div class="count-and-type">PAVED ROAD</div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12">
+            <ul id='circles' class="difficulty list-unstyled">
+                <li>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle-empty"></div>
+                </li>
+                <li class="count-and-type">DIFFICULT</li>
+            </ul>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+</div>
+
+<div>
+    <hr>
+</div>
+
+<div id="footer" class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-3 col-sm-3 col-xs-12">
+
+            <ul class="list-unstyled">
+                <li>
+                    <p>
+                        P.O. Box 5562, Coralville, IA 52241
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a href="www.iowabicyclecoalition.org" class=""> www.iowabicyclecoalition.org </a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        515.309.2867
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a href="bikeinfo@iowabicyclecoalition.org" class="">bikeinfo@iowabicyclecoalition.org</a>
+                    </p>
+            </ul>
+
+        </div>
+
+        <div class="col-md-5 col-sm-6 col-xs-12">
+        </div>
+
+        <div class="col-md-4 col-sm-3 col-xs-12">
+            <ul class="list-unstyled">
+                <li>
+                    <p class="text-right">
+                        <a href=""> Just Go Bike Podcast </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="copyright text-right">
+                        Iowa Bike Routes © 2017. All Rights Reserved.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div>
+    <hr>
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
