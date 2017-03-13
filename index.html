@@ -11,7 +11,7 @@
     <base href="/"/>
 
     <!-- custom styles -->
-    <link rel="stylesheet" href="src/css/main.css"/>
+    <!--<link rel="stylesheet" href="src/css/main.css"/>-->
     <link rel="import" href="src/header/header.html" id="header">
     <link rel="import" href="src/let-us-know/let-us-know.html" id="let-us-know">
 </head>
@@ -21,8 +21,7 @@
 
 <div id="container">
     <bike-header></bike-header>
-
-
+    <bike-let-us-know></bike-let-us-know>
 </div>
 
 <script>
@@ -37,13 +36,6 @@
 //     var header_template = header.querySelector('template');
 //     var clone = document.importNode(header_template.content, true);
 //     document.querySelector('#container').appendChild(clone);
-
-
-    var let_us_know = document.querySelector('#let-us-know').import;
-    var let_us_know_template = let_us_know.querySelector('template');
-    var clone = document.importNode(let_us_know_template.content, true);
-    document.querySelector('#container').appendChild(clone);
-
 
 </script>
 

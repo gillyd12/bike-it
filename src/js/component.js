@@ -2,9 +2,10 @@
  * Created by bryangill on 3/12/17.
  */
 
-(function () {
+var componentModule = (function () {
 
-    var register = function(componentRoot, name) {
+    function reg(componentRoot, name) {
+
         var Prototype = Object.create(HTMLElement.prototype);
         var importedDoc = document.currentScript.ownerDocument;
 
@@ -32,6 +33,12 @@
         //     prototype: Prototype
         // });
 
-    }
+    };
+
+    return {
+        register: function(componentRoot, name) {
+            reg(componentRoot, name);
+        }
+    };
 
 })();

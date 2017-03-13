@@ -1,4 +1,7 @@
+<link rel="import" href="../dependencies/scripts.html">
+
 <template>
+    <link rel="stylesheet" href="../src/css/main.css"/>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -24,34 +27,9 @@
     </nav>
 </template>
 
-
-
 <script>
     (function() {
-
-        var Prototype = Object.create(HTMLElement.prototype);
-        var importedDoc = document.currentScript.ownerDocument;
-
-        Prototype.createdCallback = function () {
-            var template = importedDoc.querySelector('template'); // get reference to the template;
-            var template_clone = document.importNode(template.content, true); // import the template into the doc to clone;
-
-//            var clickable = template_clone.querySelector('#clickable'); // eample if we had a clickable item
-//
-//            clickable.addEventListener('click', function () {
-//                alert('some clickable thing');
-//            })
-
-            var root = this.createShadowRoot();
-            root.appendChild(template_clone); // create the shadow root and append the cloned template.
-
-        };
-
-        document.registerElement('bike-header', {
-            prototype: Prototype
-        });
-
+        componentModule.register('template', 'bike-header');
     })();
 </script>
 
-<!--<link rel="stylesheet" href="../css/main.css"/>-->
