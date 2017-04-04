@@ -1,0 +1,75 @@
+<link rel="import" href="../dependencies/scripts.html">
+
+<template>
+    <link rel="stylesheet" href="../src/css/main.css"/>
+    <div id="statistics-2" class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <img class="img-responsive" src="src/assets/images/icons_gear.png" alt>
+                    </li>
+                    <li>
+                        <div class="count-and-type">ROAD</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <img class="img-responsive" src="src/assets/images/icons_chain.png" alt>
+                    </li>
+                    <li>
+                        <div class="count-and-type">41</div>
+                        &nbsp;
+                        <div class="count-and-type">MILES</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <img class="img-responsive" src="src/assets/images/icons_mountain.png" alt>
+                    </li>
+                    <li>
+                        <div class="count-and-type">41</div>
+                        &nbsp;
+                        <div class="count-and-type">FT</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <img class="img-responsive" src="src/assets/images/icons_wheel.png" alt>
+                    </li>
+                    <li>
+                        <div class="count-and-type">PAVED ROAD</div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-2 col-sm-12 col-xs-12">
+                <ul id='circles' class="difficulty list-unstyled">
+                    <li>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle-empty"></div>
+                    </li>
+                    <li class="count-and-type">DIFFICULT</li>
+                </ul>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    (function () {
+        componentModule.register('template', 'bike-statistics-2');
+    })();
+</script>

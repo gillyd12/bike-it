@@ -1,0 +1,43 @@
+<link rel="import" href="../dependencies/scripts.html">
+
+<template>
+    <link rel="stylesheet" href="../src/css/main.css"/>
+    <div id="statistics" class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <ul class="list-unstyled">
+                    <img class="img-responsive" src="src/assets/images/icons_gear.png" alt>
+                    <li class="count">5</li>
+                    <li class="count-type">Route Types</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <ul class="list-unstyled">
+                    <img class="img-responsive" src="src/assets/images/icons_chain.png" alt>
+                    <li class="count">2,000</li>
+                    <li class="count-type">Miles</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <ul class="list-unstyled">
+                    <img class="img-responsive" src="src/assets/images/icons_mountain.png" alt>
+                    <li class="count">41 FT</li>
+                    <li class="count-type">Elevation</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <ul class="list-unstyled">
+                    <img class="img-responsive" src="src/assets/images/icons_wheel.png" alt>
+                    <li class="count">128</li>
+                    <li class="count-type">Routes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    (function () {
+        componentModule.register('template', 'bike-statistics');
+    })();
+</script>
